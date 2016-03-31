@@ -3,13 +3,11 @@
 <head>
 	<title>Бийск</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=1360, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<!--<link href="./favicon.ico" rel="shortcut icon">-->
 	<link href="./css/style.css" rel="stylesheet">
-	<script src="./js/jquery.js"></script>
 	<!--[if IE 8]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="./js/ie8.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -17,39 +15,52 @@
 		<div class="panel">
 			<div>
 				<div class="search">
-					<input type="text" placeholder="Поиск">
+					<form>
+						<input type="text" placeholder="Поиск">
+						<input type="submit" value="">
+					</form>
 				</div>
 				<ul class="info">
 					<li><strong>Бийск, Россия</strong> чт 12 ноя 2015, 11:45</li>
 					<li><span>Сейчас</span> <i class="weather-icon"></i> 32º</li>
 					<li><span><i class="dollar-icon"></i> 64, 56</span> <span><i class="euro-icon"></i> 69, 37</span></li>
 				</ul>
+				<div class="drop">
+					<p><i class="weather-icon"></i> 32º</p>
+					<ul>
+						<li><i class="dollar-icon"></i> 64, 56</li>
+						<li><i class="euro-icon"></i> 69, 37</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<header>
 			<div>
-				<a href="#"><img src="./img/logo.png" width="251" height="59" class="logo" alt=""></a>
-				<nav>
-					<ul>
-						<li class="active"><a href="#">живу</a></li>
-						<li><a href="#">увлекаюсь</a></li>
-						<li><a href="#">покупаю</a></li>
-						<li><a href="#">отдыхаю</a></li>
+				<img src="./img/logo.png" width="251" height="59" class="logo" alt="">
+				<div>
+					<nav>
+						<ul>
+							<li><a href="#"><span>живу</span></a></li>
+							<li><a href="#"><span>увлекаюсь</span></a></li>
+							<li><a href="#"><span>покупаю</span></a></li>
+							<li><a href="#"><span>отдыхаю</span></a></li>
+						</ul>
+					</nav>
+					<ul class="type">
+						<li><a href="#"><span><i><img src="./img/car-icon.png" width="18" height="15" alt=""></i>Гость</span></a></li>
+						<li><a href="#"><span><i><img src="./img/house-icon.png" width="21" height="20" alt=""></i>Сосед</span></a></li>
 					</ul>
-				</nav>
-				<ul class="type">
-					<li><a href="#"><span><i><img src="./img/car-icon.png" width="18" height="15" alt=""></i>Гость</span></a></li>
-					<li><a href="#"><span><i><img src="./img/house-icon.png" width="21" height="20" alt=""></i>Сосед</span></a></li>
-				</ul>
+				</div>
+				<span class="menu-open"></span>
 			</div>
 		</header>
 		<div class="page-title">
 			<div>
-				<h1>Все статьи</h1>
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
 					<li><span>Живу</span></li>
 				</ul>
+				<h1>Все статьи</h1>
 			</div>
 		</div>
 		<section class="main-b">
@@ -61,7 +72,7 @@
 								<img src="./pic/article-1.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label purple">Концерты и фестивали</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<li>
@@ -69,7 +80,7 @@
 								<img src="./pic/article-2.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label yellow">Интересные места</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<li>
@@ -77,7 +88,7 @@
 								<img src="./pic/article-3.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label purple">Творчество</p>
-							<h3>Аналитика на тему: “Охрана культурного наследия.</h3>
+							<h3><a href="#">Аналитика на тему: “Охрана культурного наследия.</a></h3>
 							<p>Сохранность объектов культурного наследия контролирует Федеральная служба по надзору за соблюдением законодательства в сфере массовых коммуникаций и охране культурного наследия.</p>
 						</li>
 						<li>
@@ -85,7 +96,7 @@
 								<img src="./pic/article-4.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label green">Еда</p>
-							<h3>Новогодняя ярмарка, литературный вечер и другие события недели.</h3>
+							<h3><a href="#">Новогодняя ярмарка, литературный вечер и другие события недели.</a></h3>
 							<p>Фонд «Жизнь как чудо» устраивает литературный вечер: артисты театра и кино Евгений Князев, Екатерина Волкова, Вячеслав Манучаров, Елена Мельникова, Александра Ребенок, Наталья Швец и дуэт Игнат Акрачков и Алина Ольшанская прочитают отрывки...</p>
 						</li>
 						<li>
@@ -93,7 +104,7 @@
 								<img src="./pic/article-5.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label red">Здоровье и красота</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<li>
@@ -101,18 +112,19 @@
 								<img src="./pic/article-6.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label red">Авторская колонка</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<div class="banner">
-							<img src="./pic/banner-6.jpg" width="960" height="97" alt="">
+							<a href="#"><img src="./pic/banner-6.jpg" width="960" height="97" class="b-v" alt=""></a>
+							<a href="#"><img src="./pic/banner-5.jpg" width="307" height="151" class="b-h" alt=""></a>
 						</div>
 						<li>
 							<div>
 								<img src="./pic/article-1.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label purple">Концерты и фестивали</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<li>
@@ -120,7 +132,7 @@
 								<img src="./pic/article-2.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label yellow">Интересные места</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 						<li>
@@ -128,7 +140,7 @@
 								<img src="./pic/article-3.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label purple">Творчество</p>
-							<h3>Аналитика на тему: “Охрана культурного наследия.</h3>
+							<h3><a href="#">Аналитика на тему: “Охрана культурного наследия.</a></h3>
 							<p>Сохранность объектов культурного наследия контролирует Федеральная служба по надзору за соблюдением законодательства в сфере массовых коммуникаций и охране культурного наследия.</p>
 						</li>
 						<li>
@@ -136,7 +148,7 @@
 								<img src="./pic/article-4.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label green">Еда</p>
-							<h3>Новогодняя ярмарка, литературный вечер и другие события недели.</h3>
+							<h3><a href="#">Новогодняя ярмарка, литературный вечер и другие события недели.</a></h3>
 							<p>Фонд «Жизнь как чудо» устраивает литературный вечер: артисты театра и кино Евгений Князев, Екатерина Волкова, Вячеслав Манучаров, Елена Мельникова, Александра Ребенок, Наталья Швец и дуэт Игнат Акрачков и Алина Ольшанская прочитают отрывки...</p>
 						</li>
 						<li>
@@ -144,14 +156,15 @@
 								<img src="./pic/article-5.jpg" width="120" height="120" alt="">
 							</div>
 							<p class="label red">Здоровье и красота</p>
-							<h3>Парк искусств “Музеон”.</h3>
+							<h3><a href="#">Парк искусств “Музеон”.</a></h3>
 							<p>Парк искусств МУЗЕОН — это cамый крупный музей скульптуры под открытым небом, творческая мастерская смелых идей, центр актуального искусства, музыки и кино и комфортная зеленая зона в самом центре Москвы.</p>
 						</li>
 					</ul>
 				</div>
 				<aside>
 					<div class="banner">
-						<img src="./pic/banner-4.jpg" width="307" height="355" alt="">
+						<a href="#"><img src="./pic/banner-4.jpg" width="307" height="355" class="b-v" alt=""></a>
+						<a href="#"><img src="./pic/banner-5.jpg" width="307" height="151" class="b-h" alt=""></a>
 					</div>
 					<ul class="tags-e">
 						<li class="marks">
@@ -182,7 +195,8 @@
 						</li>
 					</ul>
 					<div class="banner">
-						<img src="./pic/banner-3.jpg" width="307" height="316" alt="">
+						<a href="#"><img src="./pic/banner-3.jpg" width="307" height="316" class="b-v" alt=""></a>
+						<a href="#"><img src="./pic/banner-5.jpg" width="307" height="151" class="b-h" alt=""></a>
 					</div>
 					<div class="battle">
 						<a href="#" class="tile-element item-nopic">
@@ -206,7 +220,8 @@
 						</a>
 					</div>
 					<div class="banner">
-						<img src="./pic/banner-4.jpg" width="307" height="355" alt="">
+						<a href="#"><img src="./pic/banner-4.jpg" width="307" height="355" class="b-v" alt=""></a>
+						<a href="#"><img src="./pic/banner-5.jpg" width="307" height="151" class="b-h" alt=""></a>
 					</div>
 				</aside>
 			</div>
@@ -216,17 +231,20 @@
 	</div>
 	<footer>
 		<div>
-			<ul class="nav">
-				<li><a href="#">ЖИВУ</a></li>
-				<li><a href="#">УВЛЕКАЮСЬ</a></li>
-				<li><a href="#">ПОКУПАЮ</a></li>
-				<li><a href="#">ОТДЫХАЮ</a></li>
-			</ul>
-			<ul class="nav">
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Реклама</a></li>
-				<li><a href="#">Партнерам</a></li>
-			</ul>
+			<span class="menu-open"></span>
+			<div class="nav-group">
+				<ul class="nav">
+					<li><a href="#">ЖИВУ</a></li>
+					<li><a href="#">УВЛЕКАЮСЬ</a></li>
+					<li><a href="#">ПОКУПАЮ</a></li>
+					<li><a href="#">ОТДЫХАЮ</a></li>
+				</ul>
+				<ul class="nav">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Реклама</a></li>
+					<li><a href="#">Партнерам</a></li>
+				</ul>
+			</div>
 			<ul class="social">
 				<li><a href="#"><img src="./img/fb-icon.png" width="45" height="45" alt=""></a></li>
 				<li><a href="#"><img src="./img/vk-icon.png" width="45" height="45" alt=""></a></li>
@@ -237,9 +255,34 @@
 			<p>Разработка сайта - <a href="http://letsrock.pro" target="_blank"><img src="./img/letsrock-logo.png" width="89" height="22" alt=""></a></p>
 		</div>
 	</footer>
+	<div class="fade"></div>
+	<span class="menu-mobile-trigger"></span>
+	<div class="menu-m">
+		<div>
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Поиск">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<ul class="nav">
+				<li><a href="#">живу</a></li>
+				<li><a href="#">увлекаюсь</a></li>
+				<li><a href="#">покупаю</a></li>
+				<li><a href="#">отдыхаю</a></li>
+			</ul>
+			<ul class="type">
+				<li><a href="#"><i><img src="./img/car-icon.png" width="18" height="15" alt=""></i>Гость</a></li>
+				<li><a href="#"><i><img src="./img/house-icon.png" width="21" height="20" alt=""></i>Сосед</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/jquery.js"></script>
 	<script src="./js/easing.js"></script>
 	<script src="./js/jcarousel.js"></script>
+	<script src="./js/masonry.js"></script>
 	<script src="./js/mobile.js"></script>
+	<script src="./js/modernizr.js"></script>
 	<script src="./js/uniform.js"></script>
 	<script src="./js/dynamic.js"></script>
 </body>

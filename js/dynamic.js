@@ -226,4 +226,10 @@
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
+	$('.file .upload').bind('click', function() {
+		$(this).siblings('input[type="file"]').trigger('click');
+	});
+	$('.file input[type="file"]').change(function() {
+		$(this).siblings('.title').text($(this).val().split('/').pop().split('\\').pop());
+	});
 });

@@ -2632,3 +2632,107 @@ div.checker input {
 	max-width:30px;
 	max-height:30px;
 }
+
+.form-n {
+	width:440px;
+	padding:32px 20px 31px;
+	margin:0 auto;
+}
+.form-n h3 {
+	font-size:25px;
+	line-height:29px;
+	padding:0;
+	margin:0 0 13px;
+}
+.form-n ul {
+	margin:0 0 19px;
+}
+.form-n ul li {
+	margin:0 0 19px;
+}
+.form-n p {
+	color:#606060;
+	font-size:16px;
+	line-height:20px;
+	margin:0 0 19px;
+}
+.form-n input[type="text"], .form-n input[type="password"], .form-n input[type="email"] {
+	width:100%;
+	color:#606060;
+	font-size:16px;
+    font-family:'Proxima Nova', sans-serif;
+	padding:13px 20px 15px;
+	border:1px solid #dadada;
+	background:rgb(225,226,226);
+	background:-moz-linear-gradient(top,  rgba(225,226,226,1) 0%, rgba(243,243,243,1) 100%);
+	background:-webkit-linear-gradient(top,  rgba(225,226,226,1) 0%,rgba(243,243,243,1) 100%);
+	background:linear-gradient(to bottom,  rgba(225,226,226,1) 0%,rgba(243,243,243,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e2e2', endColorstr='#f3f3f3',GradientType=0 );
+}
+.form-n input[type="submit"] {
+	width:100%;
+	color:#ffffff;
+	font-size:16px;
+	line-height:20px;
+    font-family:'Proxima Nova', sans-serif;
+	cursor:pointer;
+	padding:14px 15px 16px;
+	margin-top:6px;
+	background:#fbb525;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+}
+.form-n p.file {
+	margin:24px 0 19px;
+}
+.form-n p.file span {
+	display:inline-block;
+	vertical-align:top;
+	padding:9px 17px 11px 0;
+}
+.form-n p.file .upload {
+	cursor:pointer;
+	padding:8px 8px 10px;
+	margin:0 16px 0 0;
+	border:1px solid #dadada;
+	background:rgb(225,226,226);
+	background:-moz-linear-gradient(top,  rgba(225,226,226,1) 0%, rgba(243,243,243,1) 100%);
+	background:-webkit-linear-gradient(top,  rgba(225,226,226,1) 0%,rgba(243,243,243,1) 100%);
+	background:linear-gradient(to bottom,  rgba(225,226,226,1) 0%,rgba(243,243,243,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e2e2', endColorstr='#f3f3f3',GradientType=0 );
+}
+.form-n p.file input[type="file"] {
+	display:none;
+}
+.form-n p.file .title {
+	padding-right:0;
+}
+.form-n .sub {
+	clear:both;
+	overflow:hidden;
+	margin:-6px 0 8px;
+}
+.form-n .sub a {
+	position:relative;
+	display:block;
+	color:#a71010;
+	font-size:14px;
+	line-height:17px;
+}
+.form-n .sub a:after {
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:1px;
+	width:100%;
+	border-bottom:1px solid #e1caca;
+}
+.form-n .sub a:hover:after {
+	border-bottom-color:transparent;
+}
+.form-n .sub a.recover {
+	float:left;
+}	
+.form-n .sub a.reg {
+	float:right;
+}	

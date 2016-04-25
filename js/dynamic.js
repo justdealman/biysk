@@ -79,11 +79,11 @@
 		var w = $('header .type').position().left-$('header .logo').position().left-310;
 		$('header nav').width(w);
 		var l = 0;
-		$('header nav ul li').each(function() {
+		$('header nav > ul > li').each(function() {
 			l += $(this).outerWidth();
 		});
-		$('header nav ul li a').css({
-			'padding-right': Math.ceil((w-l)/$('header nav ul li').size())+'px',
+		$('header nav > ul > li > a').css({
+			'padding-right': Math.ceil((w-l)/$('header nav > ul > li').size())+'px',
 			'opacity': '1'
 		});
 	}

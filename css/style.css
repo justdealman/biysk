@@ -364,6 +364,7 @@ button::-moz-focus-inner {
 }
 header {
 	position:relative;
+	z-index:10;
 	padding:0 30px;
 	margin:0 0 18px;
 	background:#ffffff;
@@ -387,20 +388,20 @@ header nav {
 	right:208px;
 	top:0;
 }
-header nav ul {
-	overflow:hidden;
+header nav > ul {
 	white-space:nowrap;
 	margin:0;
 }
-header nav ul li {
+header nav > ul > li {
+	position:relative;
 	display:inline-block;
 	vertical-align:top;
 	margin-left:-3px;
 }
-header nav ul li:first-child {
+header nav > ul > li:first-child {
 	margin-left:0;
 }
-header nav ul li a {
+header nav > ul > li > a {
 	display:block;
 	font-size:24px;
 	line-height:28px;
@@ -409,11 +410,33 @@ header nav ul li a {
 	border-bottom:4px solid transparent;
 	opacity:0;
 }
-header nav ul li a span {
+header nav > ul > li > a > span {
 	display:block;
 }
-header nav ul li.active a, header nav ul li a:hover {
+header nav > ul > li.active > a, header nav > ul > li:hover > a {
 	border-bottom:4px solid #000000;
+}
+header nav > ul > li > ul {
+	position:absolute;
+	left:0;
+	top:160px;
+	display:none;
+	padding:8px 0 10px;
+	margin:0;
+	background:#000000;
+}
+header nav > ul > li:hover > ul {
+	display:block;
+}
+header nav > ul > li > ul li {
+	font-size:20px;
+	line-height:30px;
+}
+header nav > ul > li > ul li a {
+	display:block;
+	color:#ffffff;
+	font-weight:600;
+	padding:10px 33px;
 }
 header .type {
 	position:absolute;
@@ -2588,12 +2611,27 @@ div.checker input {
 .menu-m .nav {
 	margin:0 20px 23px 0;
 }
-.menu-m .nav li a {
+.menu-m .nav > li > a {
 	display:block;
 	color:#ffffff;
 	font-size:22px;
 	line-height:26px;
 	padding:11px 30px;
+}
+.menu-m .nav > li  > ul {
+	padding:2px 0 3px;
+	margin:0;
+	background:#272727;
+	border-top:2px solid #fbb525;
+}
+.menu-m .nav > li  > ul li {
+	font-size:17px;
+	line-height:21px;
+}
+.menu-m .nav > li  > ul li a {
+	display:block;
+	color:#ffffff;
+	padding:9px 30px 10px;
 }
 .menu-m .type {
 	margin:0 20px 0 0;

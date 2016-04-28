@@ -245,4 +245,13 @@
 	$('.file input[type="file"]').change(function() {
 		$(this).siblings('.title').text($(this).val().split('/').pop().split('\\').pop());
 	});
+	$('.side-sl').slick({
+		infinite: true,
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});
 });

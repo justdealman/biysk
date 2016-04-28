@@ -1422,10 +1422,11 @@ footer .social li a img {
 }
 .progress-bar li div h4 span {
 	position:absolute;
-	right:8px;
-	top:4px;
+	right:0;
+	top:0;
 	display:block;
 	opacity:0;
+	padding:4px 8px;
 }
 .progress-bar li div h4 span em {
 	font-style:normal;

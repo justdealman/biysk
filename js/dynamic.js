@@ -179,6 +179,19 @@
 		$(this).find('h4').stop().delay(200).animate({
 			'width': p+'%'
 		}, 1000);
+		var textWidth = $(this).find('h4 span').outerWidth();
+		var barWidth = $(this).find('div').width()*p/100;
+		if ( textWidth > barWidth ) {
+			$(this).find('span').css({
+				'right': -textWidth+'px',
+				'color': '#000000'
+			});
+		} else {
+			$(this).find('span').css({
+				'right': '0',
+				'color': '#ffffff'
+			});
+		}
 		$(this).find('span').stop().delay(200).animate({
 			'opacity': '1'
 		}, 500);

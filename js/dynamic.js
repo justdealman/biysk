@@ -166,14 +166,12 @@
 			'background-size': 'cover'
 		});
 	}*/
-	if ( $('.tile-element').length > 0 ) {
-		$('.tile-element img.bg').each(function() {
-			$(this).parent().css({
-				'background': 'url("'+$(this).attr('src')+'") no-repeat center center',
-				'background-size': 'cover'
-			});
+	$('img.bg').each(function() {
+		$(this).parent().css({
+			'background': 'url("'+$(this).attr('src')+'") no-repeat center center',
+			'background-size': 'cover'
 		});
-	}
+	});
 	$('.progress-bar li').each(function() {
 		var p = eval($(this).find('em').text());
 		$(this).find('h4').stop().delay(200).animate({

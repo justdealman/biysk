@@ -197,6 +197,7 @@ button::-moz-focus-inner {
 }
 .wrapper {
 	position:relative;
+	z-index:1;
 	min-height:100%;
 	margin:0 auto;
 }
@@ -1059,6 +1060,7 @@ ul.grid .tiles-group {
 }
 footer {
 	position:relative;
+	z-index:1;
 	height:284px;
 	padding:0 30px;
 	margin:-284px 0 0;
@@ -2793,4 +2795,24 @@ div.checker input {
 		-webkit-transform-origin:left center;
 		transform-origin:left center;
 	}
+}
+.page-bg {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.page-bg:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgb(255,255,255);
+	background:rgba(255,255,255,0.8);
+}
+img.bg {
+	display:none;
 }

@@ -205,7 +205,7 @@ button::-moz-focus-inner {
 
 .panel {
 	position:relative;
-	z-index:1;
+	z-index:20;
 	padding:0 30px;
 	background:#000000;
 }
@@ -710,6 +710,7 @@ ul.grid > li.wide {
 	margin:0 20px;
 }
 .tile-element.item-standart .title {
+	overflow:hidden;
 	max-height:84px;
 }
 .tile-element:hover .title {
@@ -2784,4 +2785,12 @@ div.checker input {
 	width:100%;
 	height:auto;
 	margin:0 0 -4px;
+}
+@media all and (max-width: 380px) {
+	header .logo {
+		-webkit-transform:scale(0.85);
+		transform:scale(0.85);
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
 }

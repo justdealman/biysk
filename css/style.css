@@ -1192,12 +1192,12 @@ footer .social li a img {
 .breadcrumbs li span {
 	color:#a71010;
 }
-.wrapper > .breadcrumbs {
+.wrapper > .breadcrumbs, .wrapper > .wrap-w > .breadcrumbs {
 	max-width:1300px;
-	padding:39px 30px 5px;
+	padding:21px 30px 5px;
 	margin:0 auto;
 }
-.wrapper > .breadcrumbs li {
+.wrapper > .breadcrumbs li, .wrapper > .wrap-w > .breadcrumbs li {
 	font-size:14px;
 	line-height:18px;
 }
@@ -2465,10 +2465,13 @@ div.checker input {
 		padding-top:5px;
 		margin-top:0;
 	}
-	.wrapper > .breadcrumbs {
+	.wrapper > .breadcrumbs, .wrapper > .wrap-w > .breadcrumbs {
 		font-size:14px;
 		line-height:18px;
 		margin:-30px 0 10px;
+	}
+	.wrapper > .wrap-w > .breadcrumbs {
+		margin:-12px 0 10px;
 	}
 	.page-title .breadcrumbs {
 		position:static;
@@ -2815,4 +2818,10 @@ div.checker input {
 }
 img.bg {
 	display:none;
+}
+.wrap-w {
+	max-width:1360px;
+	padding:18px 0 17px;
+	margin:-18px auto -17px;
+	background:#f3f3f3;
 }
